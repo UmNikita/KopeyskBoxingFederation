@@ -237,6 +237,13 @@
                 margin-right: 50px;
             }
 
+            .main-not__title {
+                font-size: 36px;
+                text-align: center;
+                margin-top: 150px;
+                margin-bottom: 450px;
+                color: #696969;
+            }
 
             .main-about__title {
                 font-size: 55px;

@@ -13,9 +13,9 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
-    'description' => env('APP_DESCRIPTION', 'Laravel'),
-    'keywords' => env('APP_KEYWORDS', 'Laravel'),
+    'name' => 'Копейская федерация бокса',
+    'description' => 'Официальный сайт Копейской Федерации бокса',
+    'keywords' => 'Копейская федерация бокса, Копейск, Федерация бокса, бокс',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,9 +80,9 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'en'),
+    'locale' => env('APP_LOCALE', 'ru'),
 
-    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'ru'),
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
 

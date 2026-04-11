@@ -1,6 +1,6 @@
 <header>
     <div class="header-logo-container">
-        <div class="header-logo-container-logo"></div>
+        <a href="/" class="header-logo-container-logo"></a>
     </div>
     <div class="header-menu-container">
         <nav>

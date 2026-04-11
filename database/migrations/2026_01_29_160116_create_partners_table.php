@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("name", 35);
             $table->string("url", 75);
+            $table->string("avatar_root", 50);
             $table->timestamps();
         });
     }

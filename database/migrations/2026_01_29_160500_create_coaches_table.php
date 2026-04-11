@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string("description", 75);
             $table->date("birthday");
             $table->integer("expirience", false, true);
+            $table->string("avatar_root", 50);
             $table->timestamps();
         });
     }

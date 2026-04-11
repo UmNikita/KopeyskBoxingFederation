@@ -8,10 +8,10 @@
     @else
     <div class="main-news-container">
         @foreach($news as $new)
-        <div class="main-news-el">
+        <a href="/new/{{$new->id}}" class="main-news-el" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/storage/{{$new->img_root}}')">
             <h1>{{$new->name}}</h1>
-            <p>{{$new->date_publication}}</p>
-        </div>
+            <p>{{$new->created_at}}</p>
+        </a>
         @endforeach
     </div>
     @endif

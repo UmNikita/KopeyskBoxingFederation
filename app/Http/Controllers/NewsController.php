@@ -11,4 +11,8 @@ class NewsController extends Controller
         $news = News::all();
         return view('pages.news', ["news"=>$news]);
     }
+    public function showNew($id) {
+        $new = News::find($id);
+        return view('pages.current_new', ["new"=>$new]);
+    }
 }

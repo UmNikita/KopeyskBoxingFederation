@@ -8,7 +8,7 @@
     @else
     <div class="main-partners-container">
         @foreach($partners as $partner)
-        <a href="{{$partner->url}}" target="_blank" class="main-partners-el"></a>
+        <a href="{{$partner->url}}" target="_blank" class="main-partners-el" style="background-image: url('/storage/{{$partner->avatar_root}}');"></a>
         @endforeach
     </div>
     @endif

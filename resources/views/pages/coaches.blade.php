@@ -9,7 +9,7 @@
     <div class="main-coaches-container">
         @foreach($coaches as $coach)
         <div class="main-coaches-el">
-            <div class="main-coaches-el-img"></div>
+            <div class="main-coaches-el-img" style="background-image: url('/storage/{{$coach->avatar_root}}');"></div>
             <div class="main-coaches-el-coachInfo">
                 <b class="main-coaches-el-name">{{$coach->name}} {{$coach->secondname}} {{$coach->thirstname}}</b>
                 <div class="main-coaches-el-meta-container">

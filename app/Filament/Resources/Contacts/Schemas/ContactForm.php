@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Filament\Resources\Contacts\Schemas;
+
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Schema;
+
+class ContactForm
+{
+    public static function configure(Schema $schema): Schema
+    {
+        return $schema
+            ->components([
+                TextInput::make('name')->label('Имя')->required(),
+                TextInput::make('email')->label('Почта')->required(),
+                TextInput::make('phone')->label('Телефон')->required(),
+            ]);
+    }
+}

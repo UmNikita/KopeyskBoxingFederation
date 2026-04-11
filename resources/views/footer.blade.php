@@ -1,6 +1,8 @@
 <footer>
     <div class="footer-logo">
         <div class="footer-logo-img"></div>
+        <p>{{config('contacts.contacts.address')}}</p>
+        <p>Телефон: {{config('contacts.contacts.phone')}}</p>
         <p>© 2026, Все права защищены</p>
     </div>
     <div class="footer-menu">
@@ -12,11 +14,18 @@
     </div>
     <div class="footer-end">
         <div class="footer-sites">
-            <a></a>
-            <a></a>
+            @foreach(config('socnets.nets') as $net)
+                @if($net['active'])
+                    @php
+                        $url = $net['url'];
+                        $ico = $net['ico'];
+                    @endphp
+                    <a href="{{$url}}" style="background-image: url('{{$ico}}')"></a>
+                @endif
+            @endforeach
         </div>
         <div class="main-button">
-            <button>Связаться с нами</button>
+            <a href="/#form">Связаться с нами</a>
         </div>
     </div>
 </footer>

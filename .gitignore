@@ -22,18 +22,3 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
-
-/storage/*
-!/storage/.gitkeep
-
-# разрешаем папку public
-!/storage/public/
-!/storage/public/.gitkeep
-
-# игнорим всё внутри public
-/storage/public/*
-
-# но разрешаем нужные исключения
-!/storage/public/static-imgs/
-!/storage/public/static-imgs/**
-!/storage/public/favicon.ico

@@ -1,4 +1,5 @@
 *
 !.gitignore
-!/static-imgs
+!/static-imgs/
+!/static-imgs/*
 !/favicon.ico

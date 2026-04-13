@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string("thirstname", 35);
             $table->string("position", 35)->nullable();
             $table->string("avatar_root")->nullable();
-            $table->string("phone")->nullable(false)->change();
+            $table->string("phone")->nullable();
             $table->timestamps();
         });
     }
